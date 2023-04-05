@@ -20,6 +20,8 @@ $vegetables = $vegetableLoader->getVegetables();
             <th>Id</th>
             <th>Povrca</th>
             <th>Price</th>
+            <th>Update</th>
+            <th>Delete</th>
         </tr>
         </thead>
         <tbody>
@@ -28,6 +30,8 @@ $vegetables = $vegetableLoader->getVegetables();
                 <td><?php echo $vegetable->getId()?></td>
                 <td><?php echo $vegetable->getName()?></td>
                 <td><?php echo $vegetable->getPrice()?></td>
+                <td>update</td>
+                <td>delete</td>
             </tr>
         <?php endforeach; ?>
         </tbody>

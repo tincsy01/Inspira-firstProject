@@ -11,15 +11,15 @@
 <body>
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-        <a href="#" class="navbar-brand">Prodavnica</a>
+        <a href="index.php" class="navbar-brand">Prodavnica</a>
     </div>
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="Sites/index.php">Home</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">Dodaj povrca</a>
+                <a href="upload.php" class="nav-link">Dodaj povrca</a>
             </li>
             <li class="nav-item">
                 <a href="listing.php" class="nav-link">Lista povrca</a>

@@ -14,4 +14,5 @@ interface VegetableStorageInterface
      * @return array()
      */
     public function fetchSingleVegetablesData($id);
+    public function vegetableSearch($searchTerm);
 }

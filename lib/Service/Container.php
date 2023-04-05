@@ -9,6 +9,7 @@ class Container
     private $vegetableLoader;
     private $vegetableStorage;
     private $vegetableUpload;
+    private $searchVegetables;
 
     public function __construct(array $configuration)
     {
@@ -50,5 +51,10 @@ class Container
     public function getVegetableUpload(){
         $this->vegetableUpload = new VegetableUpload($this->getPDO());
         return $this->vegetableUpload;
+    }
+    public function getSearchVegetable(){
+        $this->searchVegetables = new VegetableSearch($this->getPDO());
+        return $this->searchVegetables;
+
     }
 }

@@ -28,4 +28,16 @@ class PdoVegetableStorage implements VegetableStorageInterface
         return $vegetableArray;
 
     }
+    public function vegetableSearch($searchTerm){
+        $pdo = $this->pdo;
+        $query = $this->pdo->prepare('SELECT name FROM povrca WHERE name LIKE "%?"');
+        $query->execute(array('name' => $searchTerm));
+        $response = $query->fetch(\PDO::FETCH_ASSOC);
+        if(!$response){
+            echo 'Ne postoji takvo povrće sa ovim imenom';
+        }
+        return $response;
+
+    }
+
 }

@@ -4,6 +4,7 @@ use Service\Container;
 
 require '../../../bootstrap.php';
 require VIEW . 'header.php';
+
 ?>
 <div class="container">
     <form method="post">
@@ -15,7 +16,7 @@ require VIEW . 'header.php';
             <input type="text" class="form-control col-lg-3 col-sm-3 col-xs-3 search-input" name="price"
             placeholder="Cena povrća"><br>
         </div>
-        <button type="submit"class="btn btn-outline-secondary" id="button-add" name="add_button">Dodaj</button>
+        <button type="submit" class="btn btn-outline-secondary" id="button-add" name="add_button">Dodaj</button>
     </form>
 </div>
 <?php
