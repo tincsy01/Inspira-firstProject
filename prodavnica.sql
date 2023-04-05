@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Gép: 127.0.0.1
--- Létrehozás ideje: 2023. Már 31. 18:42
+-- Létrehozás ideje: 2023. Ápr 05. 22:20
 -- Kiszolgáló verziója: 10.4.22-MariaDB
 -- PHP verzió: 8.1.2
 
@@ -42,7 +42,9 @@ INSERT INTO `povrca` (`id`, `name`, `price`) VALUES
 (2, 'paradajz', 150),
 (3, 'spanac', 70),
 (4, 'bundeva', 170),
-(5, 'krastavac', 200);
+(5, 'krastavac', 200),
+(6, 'kupus', 300),
+(8, 'erzsi', 200);
 
 --
 -- Indexek a kiírt táblákhoz
@@ -62,7 +64,7 @@ ALTER TABLE `povrca`
 -- AUTO_INCREMENT a táblához `povrca`
 --
 ALTER TABLE `povrca`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
